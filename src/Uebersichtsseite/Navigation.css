@@ -3,6 +3,8 @@
    margin: 0;
    font-family: Arial;
    overflow: hidden;
+   background-color: white;
+   border-style: solid;
  }
 
  .Navigation a {
@@ -17,15 +19,10 @@
  }
 
 .Navigation a:hover {
-
-  background-color: #4CAF50;
-  color:white;
+  color:#088A29;
 }
 
-.Navigation a.aktiv {
-  background-color: #4CAF50;
-  color: white;
-}
+
 
 .Navigation .icon {
   display: none;
@@ -38,23 +35,30 @@
 
     display: none;
   }
-  
+
   .Navigation a.icon {
     float: right;
     display: block;
   }
 }
 
-  @media screen and (max-width: 600px) {
-    .Navigation.Responsive {position: relative;}
-    .Navigation.Responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .Navigation.Responsive a {
-    float: none;
+
+@media screen and (max-width: 600px) {
+  .NavigationResponsive {position: relative;}
+  .NavigationResponsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .NavigationResponsive a {
+
     display: block;
     text-align: left;
+    background-color: grey;
+    color: black;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-decoration: none;
   }
 }
