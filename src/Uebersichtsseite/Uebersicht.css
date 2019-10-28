@@ -1,15 +1,22 @@
 
+/*Karten formatierung*/
+
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 32%;
+  height: 400px;
+  margin-right: 2%;
   /*border: 1px solid #f1f1f1;*/
   perspective: 1000px;
   float:left;
-  padding: 20px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/* This container is needed to position the front and back side */
+.flip-card:last-child {
+  margin-right: 0;
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -17,6 +24,7 @@
   text-align: center;
   transition: transform 1.5s;
   transform-style: preserve-3d;
+  border-style: solid;
 }
 
 /* horizentale Drehung der Karte */
@@ -24,7 +32,7 @@
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -37,5 +45,21 @@
   background-color: #0B3B0B;
   color: white;
   transform: rotateY(180deg);
+
+}
+
+
+/*Überschrift*/
+
+center {
+
+font-size: 7em;
+font-style: oblique;
+margin-bottom: 1em;
+}
+
+
+.Ueberschrift{
+
 
 }
