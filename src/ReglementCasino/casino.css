@@ -12,6 +12,26 @@ h1{
     height: 100px;
 
 }
+#slot {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+
+}
+#commitment {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+}
+#budget {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
 #coin div {
     width: 100%;
     height: 100%;

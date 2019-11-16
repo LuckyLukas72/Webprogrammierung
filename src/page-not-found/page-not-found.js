@@ -1,18 +1,10 @@
 "use strict";
 
-function myFunction() {
-  var x = document.getElementById("meineNavigation");
-  if (x.className === "Navigation") {
-    x.className += "Responsive";
-  } else {
-    x.className = "Navigation";
-  }
-}
-
 /**
- * Klasse PageOverview: Stellt die Startseite der App zur Verfügung
+ * Klasse PageNotFound: Stellt eine Defaultseite zur Verfügung, die immer
+ * dann angezeigt wird, wenn der Anwender eine unbekannte URL aufruft.
  */
-class Uebersicht {
+class PageNotFound {
     /**
      * Konstruktor
      * @param {App} app Zentrale Instanz der App-Klasse
@@ -26,8 +18,8 @@ class Uebersicht {
      */
     async show() {
         // Anzuzeigenden Seiteninhalt nachladen
-        let html = await fetch("Uebersichtsseite/Uebersicht.html");
-        let css = await fetch("Uebersichtsseite/Uebersicht.css");
+        let html = await fetch("page-not-found/page-not-found.html");
+        let css = await fetch("page-not-found/page-not-found.css");
 
         if (html.ok && css.ok) {
             html = await html.text();
@@ -41,11 +33,8 @@ class Uebersicht {
         let pageDom = document.createElement("div");
         pageDom.innerHTML = html;
 
-
-
+        this._app.setPageTitle("Seite nicht gefunden", {isSubPage: true});
         this._app.setPageCss(css);
         this._app.setPageContent(pageDom.querySelector("main"));
     }
-
-
 }

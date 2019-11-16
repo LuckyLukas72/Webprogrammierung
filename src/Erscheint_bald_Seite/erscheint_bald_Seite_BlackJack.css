@@ -4,9 +4,9 @@ body, html {
 }
 
 .Hintergrund {
-  opacity: 0.5;
+  opacity: 0.7;
   /* Background image */
-  background-image: url('/Users/lukashatzenbuehler/Library/Mobile Documents/3L68KQB4HG~com~readdle~CommonDocuments/Documents/3. Semester/Webprogrammierung/Webprogrammierung_Projekt/src/Uebersichtsseite/Bilder/BlackJack.jpg');
+  background-image: src('Uebersichtsseite/Bilder/BlackJack.jpg');
   /* Full-screen */
   height: 100%;
   /* Center the background image */
@@ -15,22 +15,13 @@ body, html {
   background-size: cover;
   /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
   position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
+  /* Add a black text color to all elements inside the .bgimg container */
+  color: black;
   /* Add a font */
   font-family: "Courier New", Courier, monospace;
   /* Set the font-size to 25 pixels */
   font-size: 40px;
 }
-
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-
 
 /* Position text in the middle */
 .Text-Mitte {

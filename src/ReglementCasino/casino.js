@@ -1,23 +1,49 @@
+
 $( document ).ready(function() {
     $('#coin').bind("webkitAnimationEnd", myEndFunction);
 
     $('#coin').bind("animationend", myEndFunction);
+
+    showBudget();
 });
 
 function myEndFunction() {
+
     if(result===user_color){
        alert("Gewonnen");
+
+       kontostand += $('#commitment').val() * 2;
+
+       $('#red').attr("disabled", false);
+       $('#black').attr("disabled", false);
     }else{
         alert("Verloren");
+        $('#red').attr("disabled", false);
+        $('#black').attr("disabled", false);
     }
 
+    showBudget();
+
+    $('#red').attr("disabled", false);
+    $('#black').attr("disabled", false);
 }
 var user_color;
 var result;
+var kontostand = 50.00;
+var euro = "€";
+
 
 function coinflip(color) {
+  if(kontostand > 0 && $('#commitment').val() > 0 && kontostand >= $('#commitment').val() ){
+    $('#black').attr("disabled", true);
+    $('#red').attr("disabled", true);
+
+    kontostand -= $('#commitment').val()
+
     result = getRandomInt(2);
+
     $('#coin').removeClass();
+
     setTimeout(function(){
         if(result === 0){
             $('#coin').addClass('heads');
@@ -29,7 +55,22 @@ function coinflip(color) {
         }
     }, 100);
     user_color = color;
+  }
+  else{
+    if(kontostand <= 0){
+    alert("Sie haben leider kein Guthaben mehr.");
+    }
+    else if (kontostand < $('#commitment').val()) {
+      alert("Bitte niedrigeren Einsatz eingeben");
+    }
+    else{
+      alert("Bitte einen Betrag größer als 0 eingeben.");
+    }
+  }
+}
 
+function showBudget(){
+ $('#budget').html(kontostand + euro);
 }
 
 function getRandomInt(max) {
