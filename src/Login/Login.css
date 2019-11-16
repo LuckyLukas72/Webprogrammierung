@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 0;
+    border-bottom-width: 3px;
+
+    padding: 0.5em;
+    color: white;
+    font-size: 95%;
+}
+footer {
+    background-color:#6e1c1c;
+    border-style: solid;
+    border-color: black;
+    border-width: 0;
+    border-bottom-width: 3px;
+
+    padding: 0.5em;
+    color: white;
+    font-size: 95%;
+}
+
+main {
+    background-color: black;
+    padding: 0.5em 0.5em 32em 0.5em;
+    background-image: url(background.jpg);
+    background-size:cover;
+}
+
+.text {
+    display: inline-block;
+    width: 70%;
+    padding: 0.5em;
+    transition: transform 0.5s, background 0.5s;
+    transform: scale(1);
+    color:white;
+}
+
+.loginButton {
+    display:flex;
+    width: 5%;
+
+    border: 1px solid darkgrey;
+    border-radius: 0.5em;
+    background: yellow;
+    padding: 0.5em;
+
+    transition: transform 0.5s, background 0.5s;
+    transform: scale(1);
+}
+
+.loginButton:hover {
+    background: #088A29;
+    transform: scale(1.03);
+    cursor: pointer;
+    color:white;
+}
+label{
+    color:white;
+}
+footer nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav > ul > li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+a, a:visited {
+    color: #0A0A0A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
