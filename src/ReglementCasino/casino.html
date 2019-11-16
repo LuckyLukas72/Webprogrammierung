@@ -22,9 +22,19 @@
         <div class="side-a"></div>
         <div class="side-b"></div>
     </div>
+
     <div class="btn-panel">
-        <button type="button" class="btn btn-heads" onclick="coinflip(0)">Rot</button>
-        <button type="button" class="btn btn-tails" onclick="coinflip(1)">Schwarz</button>
+        <button id= "red" type="button" class="btn btn-heads" onclick="coinflip(0)">Rot</button>
+        <button id= "black" type="button" class="btn btn-tails" onclick="coinflip(1)">Schwarz</button>
+    </div>
+    <div class="btn-panel">
+      <span> Kontostand:
+      </span>
+      <span id="budget">
+      </span>
+      <span>Einsatz:
+      <input type="number" id="commitment">
+      <span>
     </div>
 </div>
 
