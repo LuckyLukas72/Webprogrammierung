@@ -20,6 +20,7 @@
         <script src="Uebersichtsseite/Uebersicht.js"></script>
         <script src="Erscheint_bald_Seite/countdown.js"></script>
 
+
         <!-- Cloudflare Icon Font (generiert auf Cloudflare.com) -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -35,20 +36,16 @@
                     url: "^/erscheintBlackJack/(.*)$",
                     klass: ErscheintB,
                 },{
-                    url: "^/regeln/(.*)$",
+                    url: "^//(.*)$",
                     klass: PageDetail,
                 },{
                     url: ".*",
                     klass: PageNotFound,
-                },{
-                    url: "",
-                    klass: Uebersicht
                 }
-
 
               ];
 
-                let app = new App("Segelfreunde", pages);
+                let app = new App("Casino", pages);
                 app.run();
             });
         </script>
