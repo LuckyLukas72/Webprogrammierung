@@ -1,15 +1,15 @@
 
 /*Karten formatierung*/
-
 .flip-card {
   background-color: transparent;
-  width: 32%;
-  height: 400px;
-  margin-right: 2%;
+  width: 20em;
+  height: 20em;
   perspective: 1000px;
+  padding: 1em;
   float:left;
-  padding: 10px;
-  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .flip-card:last-child {
@@ -44,17 +44,17 @@
   background-color: #0B3B0B;
   color: white;
   transform: rotateY(180deg);
-
+  overflow: scroll;
 }
 
 
 /*Überschrift*/
 
-center {
+ center{
 
 font-size: 7em;
 font-style: oblique;
-margin-bottom: 1em;
+margin-bottom: 0.5em;
 }
 
 
