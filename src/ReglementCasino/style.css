@@ -69,6 +69,8 @@ h1{
 #coin {
     transition: -webkit-transform 1s ease-in;
     -webkit-transform-style: preserve-3d;
+    padding-top: 1em;
+    
 }
 #coin div {
     position: absolute;
@@ -96,4 +98,8 @@ h1{
 @-webkit-keyframes flipTails {
     from {transform: rotateY(0); }
     to {transform: rotateY(1980deg); }
+}
+
+span{
+  font-size: 1.5em;
 }
