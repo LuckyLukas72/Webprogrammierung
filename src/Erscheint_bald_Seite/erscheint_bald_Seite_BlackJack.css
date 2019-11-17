@@ -1,30 +1,15 @@
 
-body, html {
-  height: 100%
+
+.Hintergrund{
+  border-style: solid;
+  height: ;
+  background-image: url('Uebersichtsseite/Bilder/BlackJack.jpg');
 }
 
-.Hintergrund {
-  opacity: 0.7;
-  /* Background image */
-  background-image: src('Uebersichtsseite/Bilder/BlackJack.jpg');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a black text color to all elements inside the .bgimg container */
-  color: black;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 40px;
-}
 
-/* Position text in the middle */
 .Text-Mitte {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;

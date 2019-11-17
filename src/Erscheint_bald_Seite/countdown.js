@@ -59,8 +59,8 @@ var aktualisierung = setInterval(function() {
   var minuten = Math.floor((differenz % (1000 * 60 * 60)) / (1000 * 60));
   var sekunden = Math.floor((differenz % (1000 * 60)) / 1000);
 
-  //document.getElementById('count').innerHTML = tage + "Tage " + stunden + "Stunden "
-//  + minuten + "Minuten " + sekunden + "Sekunden ";
+  document.getElementById('count').innerHTML = tage + "Tage " + stunden + "Stunden "
+  + minuten + "Minuten " + sekunden + "Sekunden ";
 
   if (differenz < 0) {
     clearInterval(aktualisierung);

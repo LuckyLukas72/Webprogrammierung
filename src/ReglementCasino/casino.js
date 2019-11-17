@@ -1,4 +1,3 @@
-
 $( document ).ready(function() {
     $('#coin').bind("webkitAnimationEnd", myEndFunction);
 
