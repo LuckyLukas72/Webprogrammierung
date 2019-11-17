@@ -14,11 +14,14 @@
         <script src="database.js"></script>
 
         <!-- Klassen für die einzelnen App-Seiten -->
-        
+
         <script src="page-not-found/page-not-found.js"></script>
         <script src="Uebersichtsseite/Uebersicht.js"></script>
         <script src="Erscheint_bald_Seite/countdown.js"></script>
         <script src="ReglementCasino/casino.js"></script>
+        <script src="Login/Login.js"></script>
+        <script src="indexraffa.js"></script>
+
 
         <!-- Cloudflare Icon Font (generiert auf Cloudflare.com) -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,13 +45,19 @@
             window.addEventListener("load", () => {
                 let pages = [{
                     url: "^/$",
-                    klass: Uebersicht,
+                    klass: Home,
                 },{
                     url: "^/erscheintBlackJack/(.*)$",
                     klass: ErscheintB,
                 },{
                     url: "^/casino/(.*)$",
                     klass: Casino,
+                },{
+                    url: "^/login/(.*)$",
+                    klass: Login,
+                },{
+                    url: "^/uebersicht/(.*)$",
+                    klass: Uebersicht,
                 },{
                     url: ".*",
                     klass: PageNotFound,
