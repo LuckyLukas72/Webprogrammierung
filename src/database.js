@@ -22,7 +22,12 @@ class Database {
                 benutzer:    "Alina",
                 passwort:    "1111",
 
+            },{
+                benutzer:    "Dennis",
+                passwort:    "Schulmeister-Zimolong",
+
             },
+
         ];
     }
 
