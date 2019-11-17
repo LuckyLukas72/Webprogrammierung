@@ -24,15 +24,15 @@ html {
 
 .text {
     display: inline-block;
-    width: 50%;
+    width: 80%;
     padding: 0.5em;
     transition: transform 0.5s, background 0.5s;
     transform: scale(1);
     color:black;
     font-style: oblique;
     font-size: 1.5em;
-
 }
+
 @media screen and (max-width: 600px){
     .text {
         display: inline-block;
