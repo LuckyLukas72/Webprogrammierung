@@ -1,8 +1,11 @@
 
 
 body {
-    padding-top: 50px;
-    background: #F7F7F7;
+    background-color: #088A29;
+    padding: 0.5em 0.5em 32em 0.5em;
+    background-image: url(casinobackground.jpg);
+    background-size: cover;
+    font-size: 1,5em;
 }
 h1{
     text-align: center;
