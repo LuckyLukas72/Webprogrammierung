@@ -21,7 +21,7 @@ main {
     background-color: #088A29;
     padding: 0.5em 0.5em 33em 0.5em;
     background-image: url(casinobackground.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 .text {
