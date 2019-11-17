@@ -23,12 +23,12 @@ html {
 
 .text {
     display: inline-block;
-    width: 70%;
+    width: 60%;
     padding: 0.5em;
     transition: transform 0.5s, background 0.5s;
     transform: scale(1);
     color:black;
-    font-size: 1.5em;
+    font-size: 2em;
     font-style: oblique;
 }
 
