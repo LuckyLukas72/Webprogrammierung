@@ -70,7 +70,7 @@ h1{
     transition: -webkit-transform 1s ease-in;
     -webkit-transform-style: preserve-3d;
     padding-top: 1em;
-    
+
 }
 #coin div {
     position: absolute;
@@ -102,4 +102,10 @@ h1{
 
 span{
   font-size: 1.5em;
+}
+#red {
+  font-size: 1em;
+}
+#black{
+  font-size: 1em;
 }
