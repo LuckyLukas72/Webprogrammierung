@@ -15,8 +15,8 @@ class Home {
      */
     async show() {
         // Anzuzeigenden Seiteninhalt nachladen
-        let html = await fetch("indexraffa.html");
-        let css = await fetch("indexraffa.css");
+        let html = await fetch("Home.html");
+        let css = await fetch("Home.css");
 
         if (html.ok && css.ok) {
             html = await html.text();
