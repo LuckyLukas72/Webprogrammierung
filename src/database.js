@@ -1,14 +1,5 @@
 "use strict";
 
-/**
- * Klasse Database: Kümmert sich um die Datenhaltung der App
- *
- * Diese Klasse beinhaltet alle Datensätze der App. Entgegen dem Namen handelt
- * es sich nicht wirklich um eine Datenbank, da sie lediglich ein paar statische
- * Testdaten enthält. Ausgefeilte Methoden zum Durchsuchen, Ändern oder Löschen
- * der Daten fehlen komplett, könnten aber in einer echten Anwendung relativ
- * einfach hinzugefügt werden.
- */
 class Database {
     /**
      * Konstruktor.
@@ -22,6 +13,14 @@ class Database {
             },{
                 benutzer:    "Lukas",
                 passwort:    "5678",
+
+            },{
+                benutzer:    "Gerd",
+                passwort:    "0000",
+
+            },{
+                benutzer:    "Alina",
+                passwort:    "1111",
 
             },
         ];

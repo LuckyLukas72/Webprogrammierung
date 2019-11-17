@@ -1,6 +1,6 @@
 "use strict";
 
-function myFunction() {
+function RespFunktion() {
   var x = document.getElementById("meineNavigation");
   if (x.className === "Navigation") {
     x.className += "Responsive";
