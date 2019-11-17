@@ -12,7 +12,7 @@ header {
     border-bottom-width: 3px;
 
     padding: 0.5em;
-    color: white;
+    color: black;
     font-size: 1.5em;
 }
 
@@ -23,6 +23,7 @@ main {
     background-image: url(casinobackground.jpg);
     background-size:cover;
     font-size: 1.5em;
+    font-style: oblique;
 }
 
 .text {
@@ -31,7 +32,9 @@ main {
     padding: 0.5em;
     transition: transform 0.5s, background 0.5s;
     transform: scale(1);
-    color:white;
+    color:black;
+    font-style: oblique;
+
 }
 
 button {
@@ -44,6 +47,7 @@ button {
   text-align: center;
   transition: transform 0.5s, background 0.5s;
   transform: scale(1);
+  font-style: oblique;
 }
 
 button:hover {
@@ -53,7 +57,7 @@ button:hover {
     color:white;
 }
 label{
-    color:white;
+    color:black;
 }
 
 a, a:visited {

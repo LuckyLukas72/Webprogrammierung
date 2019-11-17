@@ -23,12 +23,13 @@ html {
 
 .text {
     display: inline-block;
-    width: 50%;
+    width: 70%;
     padding: 0.5em;
     transition: transform 0.5s, background 0.5s;
     transform: scale(1);
-    color:white;
+    color:black;
     font-size: 1.5em;
+    font-style: oblique;
 }
 
 .login {
