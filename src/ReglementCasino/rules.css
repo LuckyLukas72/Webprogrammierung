@@ -23,9 +23,12 @@
 
 }
 html {
-  background-image: url(casinobackground.jpg);
+    background-image: url(casinobackground.jpg);
     background-attachment: fixed;
-    text-align: center;
+    text-align: left;
+    background-size: cover;
+
+
 }
 h2{
 font-size: 2em;
@@ -33,8 +36,32 @@ font-size: 2em;
 }
 p{
   font-size: 1.5em;
-  width: 100%;
+  color: black;
+  width: 55%;
+
+
 }
 h1{
   font-size: 3em;
+}
+@media screen and (max-width: 800px){
+  html {
+
+      text-align: center;
+  }
+  h2{
+  font-size: 1.5em;
+
+  }
+  p{
+    font-size: 1em;
+    color: black;
+    width: 100%;
+    border-color: black;
+
+  }
+  h1{
+    font-size: 2em;
+  }
+
 }

@@ -109,3 +109,14 @@ span{
 #black{
   font-size: 1em;
 }
+@media screen and (max-width: 600px){
+  #red {
+    font-size: 0.8em;
+  }
+  #black{
+    font-size: 0.8em;
+  }
+  span{
+    font-size: 1.4em;
+  }
+}
