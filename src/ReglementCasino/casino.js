@@ -108,10 +108,10 @@ function coinflip(color) {
     alert("Sie haben leider kein Guthaben mehr.");
     }
     else if (kontostand < $('#commitment').val()) {
-      alert("Bitte niedrigeren Einsatz eingeben");
+      alert("Bitte geben Sie einen niedrigeren Einsatz ein.");
     }
     else{
-      alert("Bitte einen Betrag größer als 0 eingeben.");
+      alert("Bevor Sie spielen wollen, geben Sie bitte einen Einsatz ein, welcher größer als 0 ist.");
     }
   }
 }
