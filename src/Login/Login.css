@@ -35,15 +35,15 @@ main {
 }
 
 button {
-    width: 20%;
-    height: 10%
-    border: 1px solid darkgrey;
-    border-radius: 0.5em;
-    background: yellow;
-    padding: 0.5em;
-    text-align: center;
-    transition: transform 0.5s, background 0.5s;
-    transform: scale(1);
+  width: 20%;
+  height: 10%
+  border: 1px solid darkgrey;
+  border-radius: 0.5em;
+  background: yellow;
+  padding: 0.5em;
+  text-align: center;
+  transition: transform 0.5s, background 0.5s;
+  transform: scale(1);
 }
 
 button:hover {
