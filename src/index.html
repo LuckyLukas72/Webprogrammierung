@@ -1,77 +1,51 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Online Casino</title>
-        <link rel="shortcut icon" href="favicon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<DOCTYPE html>
 
-        <!-- Klasse App: Steuert die gesamte Anwendung -->
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="app.css" />
+  <html>
 
-        <!-- Klasse Database: Verwaltet die Daten der Anwendung -->
-        <script src="database.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <title> Online Casino </title>
+  <link rel= "shortcut icon" href="https://www.google.de/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwjL8vCC_K_lAhVP_KQKHa0bBDAQjRx6BAgBEAQ&url=https%3A%2F%2Frizk.com%2Fde%2Fcasino%2Fpromotion%2F5e-live-roulette-sonntagsbelohnung%2F6327&psig=AOvVaw1bWvC7-7f-YNeOZSMePfcq&ust=1571837192978303"/>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js">  </script>
+</head>
 
-        <!-- Klassen für die einzelnen App-Seiten -->
-        <script src="page-overview/page-overview.js"></script>
-        <script src="page-detail/page-detail.js"></script>
-        <script src="page-not-found/page-not-found.js"></script>
-        <script src="Uebersichtsseite/Uebersicht.js"></script>
-        <script src="Erscheint_bald_Seite/countdown.js"></script>
+<body>
 
+  <header>
+      <h1> Willkommen im Online Casino </h1>
+  </header>
 
-        <!-- Cloudflare Icon Font (generiert auf Cloudflare.com) -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-        <!-- Anwendung starten -->
-        <script>
-            window.addEventListener("load", () => {
-                let pages = [{
-                    url: "^/$",
-                    klass: Uebersicht,
-                },{
-                    url: "^/erscheintBlackJack/(.*)$",
-                    klass: ErscheintB,
-                },{
-                    url: "^//(.*)$",
-                    klass: PageDetail,
-                },{
-                    url: ".*",
-                    klass: PageNotFound,
-                }
-
-              ];
-
-                let app = new App("Casino", pages);
-                app.run();
-            });
-        </script>
-
-        <!-- Dummy-Element für dynamisch nachgeladene CSS-Regeln -->
-        <style id="page-css"></style>
-    </head>
-    <body>
-        <!-- Kopfbereich der App -->
-        <header>
-          <div class = "Navigation" id="meineNavigation">
-            <a href="#" class="aktiv"> Home </a>
-            <a href="#spiele"> Spiele </a>
-            <a href="#regeln"> Regeln </a>
-            <a class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-
-          </div>
+  <main>
+      <div class="text">
+          <p1>
+              Treten Sie ein in eine Welt voller Abenteuer und großen Gewinnen.<br />
+              Lassen Sie sich von unserer Spieleauswahl inspirieren.<br />
+              Kostenlos einloggen und schon können Sie beginnen.<br />
+              Spielteilnahme ab 18 Jahren.<br />
+              Glücksspiel kann süchtig machen.<br />
+          </p1>
+      </div>
+      <br />
+      <br />
+      <div class="login">
+          <p2>
+              Zum Login<br />
+          </p2>
+      </div>
+  </main>
 
 
-        </header>
-
-        <!-- Hauptbereich mit dem Inhalt der einzelnen Seiten -->
-        <main id="app-main-area">
-            Inhalt des Hauptbereichs
-        </main>
-    </body>
-</html>
+</body>
+<footer>
+            © Online Casino
+            <nav>
+                <ul>
+                    <li> <a>Startseite</a> </li>
+                    <li> <a>Das richtige Spiel finden</a> </li>
+                    <li> <a>Die Spielregeln</a> </li>
+                    <li> <a>Impressum</a> </li>
+                </ul>
+            </nav>
+        </footer>
+  </html>
