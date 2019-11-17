@@ -1,8 +1,4 @@
 
-body, html {
-  height: 100%
-}
-
 main {
   opacity: 0.5;
   /* Background image */
@@ -23,16 +19,7 @@ main {
   font-size: 40px;
 }
 
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
 
-
-
-/* Position text in the middle */
 .Text-Mitte {
   position: absolute;
   top: 50%;

@@ -4,7 +4,11 @@
   border-style: solid;
   height: ;
   background-image: url('Uebersichtsseite/Bilder/BlackJack.jpg');
+  opacity: 55%;
+  background-color: green;
   background-size: cover;
+  background-position: center;
+  position: relative;
   height: 100% !important;
 }
 
@@ -17,16 +21,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
-html{
-  height: 100% !important;
-}
-
-main{
-  height: 100% !important;
-}
-
-body{
+html, main, body{
   height: 100% !important;
 }
