@@ -3,7 +3,7 @@ body, html {
   height: 100%
 }
 
-.Hintergrund {
+main {
   opacity: 0.5;
   /* Background image */
   background-image: url('/Users/lukashatzenbuehler/Library/Mobile Documents/3L68KQB4HG~com~readdle~CommonDocuments/Documents/3. Semester/Webprogrammierung/Webprogrammierung_Projekt/src/Uebersichtsseite/Bilder/Roulette.jpg');
