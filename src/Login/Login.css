@@ -4,7 +4,7 @@ html, body {
 }
 
 header {
-    background-color: green;
+    background-color: black;
 
     border-style: solid;
     border-color: black;
@@ -34,20 +34,19 @@ main {
     color:white;
 }
 
-.loginButton {
-    display:flex;
-    width: 5%;
-
+button {
+    width: 20%;
+    height: 10%
     border: 1px solid darkgrey;
     border-radius: 0.5em;
     background: yellow;
     padding: 0.5em;
-
+    text-align: center;
     transition: transform 0.5s, background 0.5s;
     transform: scale(1);
 }
 
-.loginButton:hover {
+button:hover {
     background: #088A29;
     transform: scale(1.03);
     cursor: pointer;
